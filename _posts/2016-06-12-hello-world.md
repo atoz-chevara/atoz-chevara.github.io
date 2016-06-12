@@ -2,6 +2,7 @@
 layout: post
 title: Hello World
 description: "Postingan Awal."
+modified: 2016-06-13
 tags: [hell]
 image:
   background: triangular.png
