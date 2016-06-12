@@ -20,3 +20,11 @@ This little bit of YAML makes the assumption that your background image asset is
 If you want to set a background image for the entire site just add `background: filename.png` to your `_config.yml` and BOOM --- background images on every page!
 
 <iframe style="background-image: url('/images/iphone6.png'); max-width: initial; padding: 93px 25px 95px 25px;  display:block; margin:auto;margin-top:30px; border:none;" src="http://atoz-chevara.github.io/places-app/" width="349" height="617" scrolling="no" class="lazy-hidden"></iframe>
+
+<div style="display: flex;" >
+<div style="flex-grow: 1;"> </div>
+<div style="background-image: url('/images/iphone6.png'); width: 401px; height: 806px; ">
+<iframe style=" margin-top: 92px; margin-left: 26px;" src="http://atoz-chevara.github.io/places-app/" width="349" height="617" scrolling="no" class="lazy-hidden"></iframe>
+</div>
+<div style="flex-grow: 1;"> </div>
+</div>
