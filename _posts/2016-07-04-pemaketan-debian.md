@@ -207,6 +207,7 @@ ed (1.9-0blankon1) tambora; urgency=low
 {% endhighlight %}
 
  Catatan:
+ 
 1. Perintah *dch -e* digunakan untuk penyuntingan awal.
 2. Perintah *dch -i* digunakan untuk penyuntingan selanjutnya ataupun pemaket lainnya.
  
