@@ -12,12 +12,15 @@ image:
 ### Persiapan.
 
 1. Pemasangan paket untuk membuat paket Debian.
+
 {% highlight bash %}
 $ sudo apt-get install -y devscripts build-essential fakeroot debhelper \
 gnupg pbuilder dh-make dpkg-dev ubuntu-dev-tools \
 autotools-dev lintian haveged
 {% endhighlight %}
+
 2. Konfigurasi awal informasi tentang pemaket.
+
 {% highlight bash %}
 $ echo 'export DEBFULLNAME="Nama Anda"' >> ~/.bashrc
 $ echo 'export DEBMAIL="email@anda.com"' >> ~/.bashrc
@@ -46,13 +49,16 @@ $ export | grep DEB
 $ grep DEB* ~/.bashrc
 $ grep DEB* ~/.profile
 {% endhighlight %}
- Hasilnya akan menampilkan informasi tentang pemaket, pilih salah antara merubah berkas 
+
+ Hasilnya akan menampilkan informasi tentang pemaket, pilih salah satu antara merubah berkas 
  *.bashrc* atau *.profile* karena Banyak jalan menuju Roma :)
  
 3. Pembuatan kunci GnuPG (GnuPrivacyGuard).
+
 {% highlight bash %}
 $ gpg --gen-key
 {% endhighlight %}		
+
  Pilih: *(1) RSA and RSA (default) -> 4096 -> (0) -> y -> (O)kay*
  
 4. Unduh paket sumber.
@@ -62,15 +68,20 @@ $ gpg --gen-key
  versi terakhir adalah 1.9.
  
  Mulai mengunduh paket sumber
+
 {% highlight bash %}
 $ wget http://ftp.gnu.org/gnu/ed/ed-1.9.tar.gz
 {% endhighlight %}
+
  Ekstrak paket sumber dan masuk ke direktori hasil ekstrak
+
 {% highlight bash %}
 $ tar zxvf ed-1.9.tar.gz
 $ cd ed-1.9
 {% endhighlight %}
+
  Kita dapat melihat struktur direktorinya dengan perintah *tree*
+
 {% highlight bash %}
 $ tree -d ../
 ../
@@ -78,17 +89,23 @@ $ tree -d ../
 	|-- doc
 	`-- testsuite
 {% endhighlight %}
+
  Bila perintah tidak ditemukan silahkan pasang paketnya
+
 {% highlight bash %}
 $ sudo apt-get install -y tree
 {% endhighlight %}
+
 ### Memulai membangun paket.
 
  Mari kita mulai membangun paket yang telah kita pilih sebelumnya
+
 {% highlight bash %}
 $ dh_make -e $DEBMAIL -c gpl3 -s -f ../ed-1.9.tar.gz
 {% endhighlight %}
+
  Kita bisa melihat perubahan yang terjadi pada struktur direktorinya
+
 {% highlight bash %}
 $ tree -d -D -t ../
 ../
@@ -130,15 +147,19 @@ debian/
 $ ls ../
 ed-1.9  ed-1.9.tar.gz  ed_1.9.orig.tar.gz
 {% endhighlight %}
+
  Dari hasil perintah *tree* kita bisa melihat ada penambahan direktori *debian* dan *debian/source* 
  dan juga salinan dari paket sumber yaitu *ed_1.9.orig.tar.gz*.
 
  Mari kita hapus beberapa berkas yang tidak diperlukan pada direktori *debian*.
+
 {% highlight bash %}
 $ cd debian
 $ rm *.ex *.EX README.* docs info
 {% endhighlight %}
+
  Hasilnya akan seperti ini
+
 {% highlight bash %}
 $ tree -D ../debian/
 ../debian/
@@ -156,6 +177,7 @@ $ tree -D ../debian/
  ketentuan pemaketan Debian, sehingga kita tidak bisa seenaknya menyunting berkas yang ada.
  
  Mari kita mulai menyunting berkas *changelog* ala Debian :)
+
 {% highlight bash %}
 $ dch -e
 
@@ -165,7 +187,9 @@ ed (1.9-1) unstable; urgency=low
 
  -- Nama Anda <email@anda.com>  Sun, 03 Jul 2016 03:41:14 +0700
 {% endhighlight %}
+
  Menjadi
+
 {% highlight bash %}
 ed (1.9-0blankon1) tambora; urgency=low
 
@@ -173,11 +197,13 @@ ed (1.9-0blankon1) tambora; urgency=low
 
  -- Nama Anda <email@anda.com>  Sun, 03 Jul 2016 03:41:14 +0700
 {% endhighlight %}
+
  Catatan:
- 1. Perintah *dch -e* digunakan untuk penyuntingan awal.
- 2. Perintah *dch -i* digunakan untuk penyuntingan selanjutnya ataupun pemaket lainnya.
+1. Perintah *dch -e* digunakan untuk penyuntingan awal.
+2. Perintah *dch -i* digunakan untuk penyuntingan selanjutnya ataupun pemaket lainnya.
  
  Sunting berkas *control* dengan text editor favorit.
+
 {% highlight bash %}
 $ cd ..
 $ nano debian/control
@@ -207,11 +233,13 @@ Description: GNU ed is a line-oriented text editor.
  .
  Extensions to and deviations from the POSIX standard are described below.
 {% endhighlight %}
+
  Pada berkas ini saya hanya melakukan penyuntingan pada bagian *Section*, *Homepage*, 
  *Vcs-Git*, *Vcs-Browser* dan *Description*. silahkan lihat informasi paket **GNU ed** 
  pada berkas README, untuk informasi lengkap paket ini bisa merujuk pada websitenya.
 
  Langkah berikutnya kita akan menyunting berkas *copyright*, berikut caranya
+
 {% highlight bash %}
 $ nano debian/copyright
 
@@ -247,11 +275,13 @@ License: GPL-3.0+
  On Debian systems, the complete text of the GNU General
  Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
 {% endhighlight %}
+
  Informasi lisensi bisa dilihat di berkas *AUTHORS* dan *ChangeLog*. Saya hanya 
  menyunting bagian *Upstream-Name* dan *Copyright*.
 
  Lakukan pengecekan dengan perintah *cme*, bila tidak tersedia silahkan pasang 
  terlebih dahulu
+
 {% highlight bash %}
 $ sudo apt-get install -y libconfig-model-dpkg-perl
 $ cme check dpkg-copyright debian/copyright
@@ -259,18 +289,25 @@ loading data
 checking data
 check done
 {% endhighlight %}
+
  Apabila hasilnya tidak seperti diatas maka lakukan penyuntingan kembali sesuai 
  dengan output dari perintah *cme*. Langkah selanjutnya kita akan mulai membuat paket Debian.
+
 {% highlight bash %}
 $ dpkg-buildpackage -rfakeroot
 {% endhighlight %}
+
  Lihat hasilnya
+
 {% highlight bash %}
 $ ls ../ | grep ed
 {% endhighlight %}
+
  Periksa paket dengan menggunakan *lintian*	
+
 {% highlight bash %}
 $ lintian -iIEv --pedantic ../*.changes
 {% endhighlight %}
+
  Selesai.
 
