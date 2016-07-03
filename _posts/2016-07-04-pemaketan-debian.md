@@ -72,7 +72,7 @@ $ gpg --gen-key
 #### Unduh paket sumber.
 
  Anda bisa memilih paket apa yang mau di buatkan versi Debiannya, disini saya 
- memilih paket [GNU ed](http://ftp.gnu.org/gnu/ed/). Saat artikel ini ditulis 
+ memilih paket **[GNU ed](http://ftp.gnu.org/gnu/ed/)**. Saat artikel ini ditulis 
  versi terakhir adalah 1.9.
  
  Mulai mengunduh paket sumber
