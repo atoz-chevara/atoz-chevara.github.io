@@ -11,7 +11,7 @@ image:
  
 ### Persiapan.
 
-1. Pemasangan paket untuk membuat paket Debian.
+ 1. Pemasangan paket untuk membuat paket Debian.
 
 {% highlight bash %}
 $ sudo apt-get install -y devscripts build-essential fakeroot debhelper \
@@ -19,7 +19,7 @@ gnupg pbuilder dh-make dpkg-dev ubuntu-dev-tools \
 autotools-dev lintian haveged
 {% endhighlight %}
 
-2. Konfigurasi awal informasi tentang pemaket.
+ 2. Konfigurasi awal informasi tentang pemaket.
 
 {% highlight bash %}
 $ echo 'export DEBFULLNAME="Nama Anda"' >> ~/.bashrc
@@ -53,7 +53,7 @@ $ grep DEB* ~/.profile
  Hasilnya akan menampilkan informasi tentang pemaket, pilih salah satu antara merubah berkas 
  *.bashrc* atau *.profile* karena Banyak jalan menuju Roma :)
  
-3. Pembuatan kunci GnuPG (GnuPrivacyGuard).
+ 3. Pembuatan kunci GnuPG (GnuPrivacyGuard).
 
 {% highlight bash %}
 $ gpg --gen-key
@@ -61,10 +61,10 @@ $ gpg --gen-key
 
  Pilih: *(1) RSA and RSA (default) -> 4096 -> (0) -> y -> (O)kay*
  
-4. Unduh paket sumber.
+ 4. Unduh paket sumber.
 
  Anda bisa memilih paket apa yang mau di buatkan versi Debiannya, disini saya 
- memilih paket **[GNU ed]**(http://ftp.gnu.org/gnu/ed/). Saat artikel ini ditulis 
+ memilih paket **[GNU ed](http://ftp.gnu.org/gnu/ed/)**. Saat artikel ini ditulis 
  versi terakhir adalah 1.9.
  
  Mulai mengunduh paket sumber
