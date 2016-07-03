@@ -5,7 +5,7 @@ description: "Pedoman pemaketan dasar Debian."
 tags: [debian, blankon]
 image:
   background: triangular.png
-comments: false
+comments: true
 ---
 
 ## Pedoman pemaketan dasar Debian.
