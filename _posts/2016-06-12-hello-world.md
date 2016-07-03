@@ -1,21 +1,16 @@
 ---
 layout: post
-title: Hello World
+title: Hello Ionic
 description: "Postingan Awal."
-modified: 2016-06-13
-tags: [hello]
+modified: 2016-07-04
+tags: [hello, ionic]
 image:
   background: triangular.png
 ---
 
-Here be a sample post with a custom background image. To utilize this "feature" just add the following YAML to a post's front matter.
+## Ionic: Advanced HTML5 Hybrid Mobile App Framework
 
-{% highlight yaml %}
-image:
-  background: filename.png
-{% endhighlight %}
-
-This little bit of YAML makes the assumption that your background image asset is in the `/images` folder. If you place it somewhere else or are hotlinking from the web, just include the full http(s):// URL. Either way you should have a background image that is tiled.
+ Contoh Aplikasi informasi mobile dengan menggunakan [Ionic Framework](ionicframework.com/), [Foursquare API](https://developer.foursquare.com/) dan [Google Static Maps API](https://developers.google.com/maps/documentation/static-maps/). kode sumber bisa dilihat [di tautan ini](https://github.com/atoz-chevara/places-app/) 
 
 <div style="display: flex;" >
 <div style="flex-grow: 1;"> </div>
