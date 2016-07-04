@@ -311,6 +311,13 @@ $ dpkg-buildpackage -rfakeroot
 
 {% highlight bash %}
 $ ls ../ | grep ed
+ed-1.9
+ed-1.9.tar.gz
+ed_1.9-0blankon1.debian.tar.xz
+ed_1.9-0blankon1.dsc
+ed_1.9-0blankon1_armhf.changes
+ed_1.9-0blankon1_armhf.deb
+ed_1.9.orig.tar.gz
 {% endhighlight %}
 
  Periksa paket dengan menggunakan *lintian*	
