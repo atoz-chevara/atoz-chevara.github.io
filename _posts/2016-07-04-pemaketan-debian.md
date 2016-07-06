@@ -2,7 +2,7 @@
 layout: post
 title: Pemaketan Debian
 description: "Pedoman pemaketan dasar Debian."
-tags: [debian, blankon]
+tags: [debian, blankon, pemaketan]
 image:
   background: triangular.png
 comments: true
