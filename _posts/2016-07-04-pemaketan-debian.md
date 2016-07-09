@@ -257,6 +257,11 @@ Description: GNU ed is a line-oriented text editor.
  Extensions to and deviations from the POSIX standard are described below.
 {% endhighlight %}
 
+<a href="#" class="btn btn-warning">Pada paket Debian, berkas *debian/control* memiliki [sintaks tertentu](https://www.debian.org/doc/debian-policy/ch-controlfields.html) dimana setiap baris
+harus dimulai dengan *spasi* dan paragraf dipisahkan oleh sebuah *titik*. Jika ingin mengikuti
+sintaks [DEP-5](http://dep.debian.net/deps/dep5/) untuk berkas *debian/copyright*, Kita akan memiliki masalah yang sama saat mengisi teks
+lisensi untuk *creative-common license*: sehingga *spasi* atau *titik* akan terlewatkan.</a>
+
  Pada berkas ini saya hanya melakukan penyuntingan pada bagian *Section*, *Homepage*, 
  *Vcs-Git*, *Vcs-Browser* dan *Description*. silahkan lihat informasi paket **GNU ed** 
  pada berkas README, untuk informasi lengkap paket ini bisa merujuk pada websitenya.
