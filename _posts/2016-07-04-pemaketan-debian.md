@@ -22,6 +22,8 @@ autotools-dev lintian haveged
 
 #### Konfigurasi awal informasi tentang pemaket.
 
+Mengatur variabel $DEBFULLNAME dan $DEBMAIL pada lingkungan shell sehingga berbagai alat-alat pemaketan Debian mengenali **Nama** dan **Alamat Email** Anda untuk memaketkan paket.
+
 {% highlight bash %}
 $ echo 'export DEBFULLNAME="Nama Anda"' >> ~/.bashrc
 $ echo 'export DEBMAIL="email@anda.com"' >> ~/.bashrc
@@ -48,6 +50,17 @@ $ . ~/.bashrc
 
 {% highlight bash %}
 $ . ~/.profile
+{% endhighlight %}
+
+atau bisa juga seperti ini:
+
+{% highlight bash %}
+$ cat >> ~/.bashrc <<EOF
+DEBFULLNAME="Nama Anda"
+DEBMAIL="email@anda.com"
+export DEBFULLNAME DEBMAIL
+EOF
+$ . ~/.bashrc
 {% endhighlight %}
 
  Periksa hasilnya
