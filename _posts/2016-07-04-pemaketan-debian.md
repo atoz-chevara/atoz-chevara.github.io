@@ -345,7 +345,7 @@ ed_1.9-0blankon1_armhf.deb
 ed_1.9.orig.tar.gz
 {% endhighlight %}
 
-##### Pemeriksaan paket.
+### Pemeriksaan paket.
 
  Periksa paket dengan menggunakan *lintian*	
 
