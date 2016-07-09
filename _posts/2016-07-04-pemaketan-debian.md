@@ -196,6 +196,8 @@ $ tree -D ../debian/
 	`-- [Jul  3  3:41]  format
 {% endhighlight %}
 
+#### Menyunting berkas changelog, control dan copyright.
+
  Pada tahap ini kita akan merubah beberapa berkas yang ada di direktori *debian* diawali 
  dengan berkas *changelog*, sebagai catatan...berkas-berkas ini disunting sesuai dengan 
  ketentuan pemaketan Debian, sehingga kita tidak bisa seenaknya menyunting berkas yang ada.
