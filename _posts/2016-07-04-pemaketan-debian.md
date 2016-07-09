@@ -22,6 +22,8 @@ autotools-dev lintian haveged
 
 #### Konfigurasi awal informasi tentang pemaket.
 
+Mengatur variabel $DEBFULLNAME dan $DEBMAIL pada lingkungan shell sehingga berbagai alat-alat pemaketan Debian mengenali **Nama** dan **Alamat Email** Anda untuk memaketkan paket.
+
 {% highlight bash %}
 $ echo 'export DEBFULLNAME="Nama Anda"' >> ~/.bashrc
 $ echo 'export DEBMAIL="email@anda.com"' >> ~/.bashrc
@@ -48,6 +50,17 @@ $ . ~/.bashrc
 
 {% highlight bash %}
 $ . ~/.profile
+{% endhighlight %}
+
+atau bisa juga seperti ini:
+
+{% highlight bash %}
+$ cat >> ~/.bashrc <<EOF
+DEBFULLNAME="Nama Anda"
+DEBMAIL="email@anda.com"
+export DEBFULLNAME DEBMAIL
+EOF
+$ . ~/.bashrc
 {% endhighlight %}
 
  Periksa hasilnya
@@ -207,10 +220,10 @@ ed (1.9-0blankon1) tambora; urgency=low
  -- Nama Anda <email@anda.com>  Sun, 03 Jul 2016 03:41:14 +0700
 {% endhighlight %}
 
- Catatan:
- 
-1. Perintah *dch -e* digunakan untuk penyuntingan awal.
-2. Perintah *dch -i* digunakan untuk penyuntingan selanjutnya ataupun pemaket lainnya.
+> Catatan:
+>
+> 1. Perintah *dch -e* digunakan untuk penyuntingan awal.
+> 2. Perintah *dch -i* digunakan untuk penyuntingan selanjutnya ataupun pemaket lainnya.
  
  Sunting berkas *control* dengan text editor favorit.
 
@@ -243,6 +256,8 @@ Description: GNU ed is a line-oriented text editor.
  .
  Extensions to and deviations from the POSIX standard are described below.
 {% endhighlight %}
+
+ Pada paket Debian, berkas *debian/control* memiliki [sintaks tertentu](https://www.debian.org/doc/debian-policy/ch-controlfields.html) dimana setiap baris harus dimulai dengan *spasi* dan paragraf dipisahkan oleh sebuah *titik*. Jika ingin mengikuti sintaks [DEP-5](http://dep.debian.net/deps/dep5/) untuk berkas *debian/copyright*, Kita akan memiliki masalah yang sama saat mengisi teks lisensi untuk *creative-common license*: sehingga *spasi* atau *titik* akan terlewatkan.
 
  Pada berkas ini saya hanya melakukan penyuntingan pada bagian *Section*, *Homepage*, 
  *Vcs-Git*, *Vcs-Browser* dan *Description*. silahkan lihat informasi paket **GNU ed** 
