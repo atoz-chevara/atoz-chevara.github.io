@@ -7,10 +7,14 @@ image:
   background: triangular.png
 comments: true
 ---
-* TOC
-{:toc}
 
 ## Pedoman pemaketan dasar Debian.
+
+ Pada tulisan ini kita akan belajar membuat paket untuk Debian dan distro turunannya, saya akan mencoba untuk menuliskan beragam cara membuat paket Debian, saya memisahkan Pedoman ini dalam beberapa bagian dan berusaha agar dapat mudah untuk dipahami bagi pembacanya.
+
+**Daftar Isi**
+* TOC
+{:toc}
  
 ### Persiapan.
 
