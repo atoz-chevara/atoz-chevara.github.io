@@ -7,6 +7,8 @@ image:
   background: triangular.png
 comments: true
 ---
+* TOC
+{:toc}
 
 ## Pedoman pemaketan dasar Debian.
  
