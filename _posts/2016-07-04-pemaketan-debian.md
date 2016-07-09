@@ -202,6 +202,8 @@ $ tree -D ../debian/
  dengan berkas *changelog*, sebagai catatan...berkas-berkas ini disunting sesuai dengan 
  ketentuan pemaketan Debian, sehingga kita tidak bisa seenaknya menyunting berkas yang ada.
  
+##### Sunting berkas changelog.
+
  Mari kita mulai menyunting berkas *changelog* ala Debian :)
 
 {% highlight bash %}
@@ -228,7 +230,9 @@ ed (1.9-0blankon1) tambora; urgency=low
 >
 > 1. Perintah *dch -e* digunakan untuk penyuntingan awal.
 > 2. Perintah *dch -i* digunakan untuk penyuntingan selanjutnya ataupun pemaket lainnya.
- 
+
+##### Sunting berkas control.
+
  Sunting berkas *control* dengan text editor favorit.
 
 {% highlight bash %}
@@ -266,6 +270,8 @@ Description: GNU ed is a line-oriented text editor.
  Pada berkas ini saya hanya melakukan penyuntingan pada bagian *Section*, *Homepage*, 
  *Vcs-Git*, *Vcs-Browser* dan *Description*. silahkan lihat informasi paket **GNU ed** 
  pada berkas README, untuk informasi lengkap paket ini bisa merujuk pada websitenya.
+
+##### Sunting berkas copyright.
 
  Langkah berikutnya kita akan menyunting berkas *copyright*, berikut caranya
 
@@ -338,6 +344,8 @@ ed_1.9-0blankon1_armhf.changes
 ed_1.9-0blankon1_armhf.deb
 ed_1.9.orig.tar.gz
 {% endhighlight %}
+
+##### Pemeriksaan paket.
 
  Periksa paket dengan menggunakan *lintian*	
 
