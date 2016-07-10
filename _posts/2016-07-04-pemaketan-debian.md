@@ -10,7 +10,7 @@ comments: true
 
 ## Pedoman pemaketan dasar Debian.
 
- Pada tulisan ini kita akan belajar membuat paket untuk Debian dan distro turunannya, saya akan mencoba untuk menuliskan beragam cara membuat paket Debian, saya memisahkan Pedoman ini dalam beberapa bagian dan berusaha agar dapat mudah untuk dipahami bagi pembacanya.
+ Pada tulisan ini kita akan belajar membuat paket untuk Debian dan distro turunannya, kita akan mencoba beragam cara membuat paket Debian, saya memisahkan Pedoman ini dalam beberapa bagian dan berusaha agar pembaca dapat dengan mudah memahaminya.
 
 **Daftar Isi**
 
@@ -19,7 +19,7 @@ comments: true
  
 ### Persiapan.
 
-#### Pemasangan paket untuk membuat paket Debian.
+#### Pemasangan paket yang diperlukan.
 
 {% highlight bash %}
 $ sudo apt-get install -y devscripts build-essential fakeroot debhelper \
@@ -29,11 +29,11 @@ autotools-dev lintian haveged
 
 #### Konfigurasi awal informasi tentang pemaket.
 
-Mengatur variabel $DEBFULLNAME dan $DEBMAIL pada lingkungan shell sehingga berbagai alat-alat pemaketan Debian mengenali **Nama** dan **Alamat Email** Anda untuk memaketkan paket.
+Mengatur variabel $DEBFULLNAME dan $DEBEMAIL pada lingkungan shell sehingga berbagai alat-alat pemaketan Debian mengenali **Nama** dan **Alamat Email** Anda untuk memaketkan paket.
 
 {% highlight bash %}
 $ echo 'export DEBFULLNAME="Nama Anda"' >> ~/.bashrc
-$ echo 'export DEBMAIL="email@anda.com"' >> ~/.bashrc
+$ echo 'export DEBEMAIL="email@anda.com"' >> ~/.bashrc
 
 $ source ~/.bashrc
 {% endhighlight %}
@@ -42,7 +42,7 @@ $ source ~/.bashrc
 
 {% highlight bash %}
 $ echo 'export DEBFULLNAME="Nama Anda"' >> ~/.profile
-$ echo 'export DEBMAIL="email@anda.com"' >> ~/.profile
+$ echo 'export DEBEMAIL="email@anda.com"' >> ~/.profile
 
 $ source ~/.profile
 {% endhighlight %}
@@ -64,8 +64,8 @@ atau bisa juga seperti ini:
 {% highlight bash %}
 $ cat >> ~/.bashrc <<EOF
 DEBFULLNAME="Nama Anda"
-DEBMAIL="email@anda.com"
-export DEBFULLNAME DEBMAIL
+DEBEMAIL="email@anda.com"
+export DEBFULLNAME DEBEMAIL
 EOF
 $ . ~/.bashrc
 {% endhighlight %}
@@ -73,7 +73,7 @@ $ . ~/.bashrc
  Periksa hasilnya
 
 {% highlight bash %}
-$ echo $DEBFULLNAME ; echo $DEBMAIL
+$ echo $DEBFULLNAME ; echo $DEBEMAIL
 $ export | grep DEB
 $ grep DEB* ~/.bashrc
 $ grep DEB* ~/.profile
@@ -130,7 +130,7 @@ $ sudo apt-get install -y tree
  Mari kita mulai membangun paket yang telah kita pilih sebelumnya
 
 {% highlight bash %}
-$ dh_make -e $DEBMAIL -c gpl3 -s -f ../ed-1.9.tar.gz
+$ dh_make -e $DEBEMAIL -c gpl3 -s -f ../ed-1.9.tar.gz
 {% endhighlight %}
 
  Kita bisa melihat perubahan yang terjadi pada struktur direktorinya
@@ -249,7 +249,7 @@ Section: editors
 Priority: optional
 Maintainer: Nama Anda <email@anda.com>
 Build-Depends: debhelper (>= 9), autotools-dev
-Standards-Version: 3.9.5
+Standards-Version: 3.9.9
 Homepage: http://www.gnu.org/software/ed/
 Vcs-Git: cvs.savannah.gnu.org:/web/ed
 Vcs-Browser: http://web.cvs.savannah.gnu.org/viewvc/?root=ed
@@ -324,7 +324,7 @@ License: GPL-3.0+
 
 {% highlight bash %}
 $ sudo apt-get install -y libconfig-model-dpkg-perl
-$ cme check dpkg-copyright debian/copyright
+$ cme check dpkg
 loading data
 checking data
 check done
