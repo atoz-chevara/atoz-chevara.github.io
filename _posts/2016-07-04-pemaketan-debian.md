@@ -221,12 +221,12 @@ ed (1.9-1) unstable; urgency=low
  -- Nama Anda <email@anda.com>  Sun, 03 Jul 2016 03:41:14 +0700
 {% endhighlight %}
 
-> Keterangan:
+> **Keterangan:**
 >
 > * 1.9 merupakan versi upstream.
 > * 1 merupakan versi Debian.
-> * unstable merupakan kode rilis Debian
-> * urgency=low merupakan deskripsi tentang seberapa pentingnya peningkatan versi dari versi sebelumnya (nilainya low, medium, high, emergency, atau critical).
+> * [unstable][1] merupakan kode rilis Debian
+> * [urgency][2]=low merupakan deskripsi tentang seberapa pentingnya peningkatan versi dari versi sebelumnya (nilainya low, medium, high, emergency, atau critical).
 
  Menjadi
 
@@ -238,14 +238,14 @@ ed (1.9-0blankon1) tambora; urgency=low
  -- Nama Anda <email@anda.com>  Sun, 03 Jul 2016 03:41:14 +0700
 {% endhighlight %}
 
-> Keterangan:
+> **Keterangan:**
 >
 > + 1.9 merupakan versi upstream.
 > + 0 merupakan versi Debian.
 > + blankon1 merupakan versi Blankon.
 > + tambora merupakan kode rilis Blankon.
 
-> Catatan:
+> **Catatan:**
 >
 > 1. Perintah *dch -e* digunakan untuk penyuntingan awal.
 > 2. Perintah *dch -i* digunakan untuk penyuntingan selanjutnya ataupun pemaket lainnya.
@@ -374,3 +374,5 @@ $ lintian -iIEv --pedantic ../*.changes
 
  Selesai.
 
+[1]: https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Standards-Version "Standards-Version"
+[2]: https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Urgency "Urgency"
