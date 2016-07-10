@@ -110,7 +110,17 @@ Add notes when applying the `.alert` class.
 {% endhighlight %}
 
 <div markdown="0">
-<div class="alert note">
-<p><strong>Note:</strong> When asked to enter your email address, ensure that you enter the <a href="/articles/verifying-your-email-address">verified email address</a> for your GitHub account.</p>
+<div class="alert alert.note">
+<p>**Note:** When asked to enter your email address, ensure that you enter the <a href="/articles/verifying-your-email-address">verified email address</a> for your GitHub account.</p>
+</div>
+</div>
+<div markdown="0">
+<div class="alert alert.warning">
+<p>**Warning:** When asked to enter your email address, ensure that you enter the <a href="/articles/verifying-your-email-address">verified email address</a> for your GitHub account.</p>
+</div>
+</div>
+<div markdown="0">
+<div class="alert alert.danger">
+<p>**Danger:** When asked to enter your email address, ensure that you enter the <a href="/articles/verifying-your-email-address">verified email address</a> for your GitHub account.</p>
 </div>
 </div>
