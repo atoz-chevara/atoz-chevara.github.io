@@ -221,6 +221,13 @@ ed (1.9-1) unstable; urgency=low
  -- Nama Anda <email@anda.com>  Sun, 03 Jul 2016 03:41:14 +0700
 {% endhighlight %}
 
+> Keterangan:
+>
+> * 1.9 merupakan versi upstream.
+> * 1 merupakan versi Debian.
+> * unstable merupakan kode rilis Debian
+> * urgency=low merupakan deskripsi tentang seberapa pentingnya peningkatan versi dari versi sebelumnya (nilainya low, medium, high, emergency, atau critical).
+
  Menjadi
 
 {% highlight bash %}
@@ -230,6 +237,13 @@ ed (1.9-0blankon1) tambora; urgency=low
 
  -- Nama Anda <email@anda.com>  Sun, 03 Jul 2016 03:41:14 +0700
 {% endhighlight %}
+
+> Keterangan:
+>
+> + 1.9 merupakan versi upstream.
+> + 0 merupakan versi Debian.
+> + blankon1 merupakan versi Blankon.
+> + tambora merupakan kode rilis Blankon.
 
 > Catatan:
 >
