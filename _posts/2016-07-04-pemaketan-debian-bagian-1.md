@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pemaketan Debian - Bagian #1
+title: Pemaketan Debian - Bagian 1
 description: "Pedoman pemaketan dasar Debian."
 modified: 2016-07-11
 tags: [debian, blankon, pemaketan]
