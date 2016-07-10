@@ -251,8 +251,8 @@ ed (1.9-0blankon1) tambora; urgency=low
 
 <div class="alert alert-note"><strong>Catatan:</strong>
 <ol>
-<li>Perintah *dch -e* digunakan untuk penyuntingan awal.</li>
-<li>Perintah *dch -i* digunakan untuk penyuntingan selanjutnya ataupun pemaket lainnya.</li>
+<li>Perintah <em>dch -e</em> digunakan untuk penyuntingan awal.</li>
+<li>Perintah <em>dch -i</em> digunakan untuk penyuntingan selanjutnya ataupun pemaket lainnya.</li>
 </ol>
 </div>
 
@@ -357,7 +357,7 @@ check done
 $ dpkg-buildpackage -rfakeroot
 {% endhighlight %}
 
-<div class="alert alert-warning"><strong>Catatan:</strong> Tunggulah hingga proses selesai, karena nantinya akan diminta *passphrase* yang dibuat saat membuat kunci GnuPG. Apabila hal ini terlewati maka pembuatan paket akan galat/gagal.</div>
+<div class="alert alert-warning"><strong>Catatan:</strong> Tunggulah hingga proses selesai, karena nantinya akan diminta <em>passphrase</em> yang dibuat saat membuat kunci GnuPG. Apabila hal ini terlewati maka pembuatan paket akan galat/gagal.</div>
 
  Lihat hasilnya
 
