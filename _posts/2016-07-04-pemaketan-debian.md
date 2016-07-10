@@ -221,12 +221,14 @@ ed (1.9-1) unstable; urgency=low
  -- Nama Anda <email@anda.com>  Sun, 03 Jul 2016 03:41:14 +0700
 {% endhighlight %}
 
-> **Keterangan:**
->
-> * 1.9 merupakan versi upstream/hulu.
-> * 1 merupakan versi Debian.
-> * [unstable][1] merupakan kode rilis paket Debian, nilai unstable umumnya digunakan untuk paket baru, versi terbaru dari paket upstream/hulu dan perbaikan kutu, sedangkan nilai experimental umumnya digunakan saat pengembang melakukan uji coba (versi beta) sebelum paket itu dirilis untuk Debian (nilainya experimental, unstable, testing dan stable). Lihat [Debian Developer's Reference](https://www.debian.org/doc/manuals/developers-reference/ch04.en.html#archive) dan [The Debian Administrator's Handbook](https://debian-handbook.info/browse/stable/sect.release-lifecycle.html) untuk informasi lebih lanjut.
-> * [urgency][2]=low merupakan deskripsi tentang seberapa pentingnya peningkatan versi dari versi sebelumnya (nilainya low, medium, high, emergency, atau critical).
+<div class="alert alert-note"><strong>Keterangan:</strong>
+<ul>
+<li>1.9 merupakan versi upstream/hulu.</li>
+<li>1 merupakan versi Debian.</li>
+<li><a href="https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Distribution" target="_blank">unstable</a> merupakan kode rilis paket Debian, nilai unstable umumnya digunakan untuk paket baru, versi terbaru dari paket upstream/hulu dan perbaikan kutu, sedangkan nilai experimental umumnya digunakan saat pengembang melakukan uji coba (versi beta) sebelum paket itu dirilis untuk Debian (nilainya experimental, unstable, testing dan stable). Lihat <a href="https://www.debian.org/doc/manuals/developers-reference/ch04.en.html#archive" target="_blank">Debian Developer's Reference</a> dan <a href="https://debian-handbook.info/browse/stable/sect.release-lifecycle.html" target="_blank">The Debian Administrator's Handbook</a> untuk informasi lebih lanjut.</li>
+<li><a href="https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Urgency" target="_blank">rgency=low</a> merupakan deskripsi tentang seberapa pentingnya peningkatan versi dari versi sebelumnya (nilainya low, medium, high, emergency, atau critical).</li>
+</ul>
+</div>
 
  Menjadi
 
@@ -238,17 +240,21 @@ ed (1.9-0blankon1) tambora; urgency=low
  -- Nama Anda <email@anda.com>  Sun, 03 Jul 2016 03:41:14 +0700
 {% endhighlight %}
 
-> **Keterangan:**
->
-> + 1.9 merupakan versi upstream/hulu.
-> + 0 merupakan versi Debian.
-> + blankon1 merupakan versi Blankon.
-> + tambora merupakan kode rilis Blankon.
+<div class="alert alert-note"><strong>Keterangan:</strong>
+<ul>
+<li>1.9 merupakan versi upstream/hulu.</li>
+<li>0 merupakan versi Debian.</li>
+<li>blankon1 merupakan versi Blankon.</li>
+<li>tambora merupakan kode rilis Blankon.</li>
+</ul>
+</div>
 
-> **Catatan:**
->
-> 1. Perintah *dch -e* digunakan untuk penyuntingan awal.
-> 2. Perintah *dch -i* digunakan untuk penyuntingan selanjutnya ataupun pemaket lainnya.
+<div class="alert alert-note"><strong>Catatan:</strong>
+<ol>
+<li>Perintah *dch -e* digunakan untuk penyuntingan awal.</li>
+<li>Perintah *dch -i* digunakan untuk penyuntingan selanjutnya ataupun pemaket lainnya.</li>
+</ol>
+</div>
 
 ##### Sunting berkas control.
 
@@ -375,6 +381,3 @@ $ lintian -iIEv --pedantic ../*.changes
 {% endhighlight %}
 
  Selesai.
-
-[1]: https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Distribution
-[2]: https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Urgency "Urgency"
