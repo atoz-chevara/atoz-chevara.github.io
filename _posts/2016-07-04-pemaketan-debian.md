@@ -351,6 +351,12 @@ check done
 $ dpkg-buildpackage -rfakeroot
 {% endhighlight %}
 
+> **Catatan:**
+>
+> Tunggulah hingga proses selesai, karena nantinya akan diminta *passphrase* yang dibuat saat
+membuat kunci GnuPG.
+> Apabila hal ini terlewati maka pembuatan paket akan galat/gagal.
+
  Lihat hasilnya
 
 {% highlight bash %}
