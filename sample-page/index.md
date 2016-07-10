@@ -100,3 +100,17 @@ Make any link standout more when applying the `.btn` class.
 <div markdown="0"><a href="#" class="btn btn-warning">Warning Button</a></div>
 <div markdown="0"><a href="#" class="btn btn-danger">Danger Button</a></div>
 <div markdown="0"><a href="#" class="btn btn-info">Info Button</a></div>
+
+## Alert
+
+Add notes when applying the `.alert` class.
+
+{% highlight html %}
+<div class="alert alert.note">**Note:** When asked to enter your email address, ensure that you enter the [verified email address](/articles/verifying-your-email-address) for your GitHub account.</div>
+{% endhighlight %}
+
+<div markdown="0">
+<div class="alert note">
+<p><strong>Note:</strong> When asked to enter your email address, ensure that you enter the <a href="/articles/verifying-your-email-address">verified email address</a> for your GitHub account.</p>
+</div>
+</div>
