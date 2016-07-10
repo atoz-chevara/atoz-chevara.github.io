@@ -2,6 +2,7 @@
 layout: post
 title: Pemaketan Debian
 description: "Pedoman pemaketan dasar Debian."
+modified: 2016-07-11
 tags: [debian, blankon, pemaketan]
 image:
   background: triangular.png
@@ -82,7 +83,7 @@ $ grep DEB* ~/.profile
  Hasilnya akan menampilkan informasi tentang pemaket, pilih salah satu antara merubah berkas 
  *.bashrc* atau *.profile* karena Banyak jalan menuju Roma :)
  
-#### Pembuatan kunci GnuPG (GnuPrivacyGuard).
+#### Membuat kunci GnuPG (GnuPrivacyGuard).
 
 {% highlight bash %}
 $ gpg --gen-key
