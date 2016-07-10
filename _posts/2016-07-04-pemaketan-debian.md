@@ -223,9 +223,9 @@ ed (1.9-1) unstable; urgency=low
 
 > **Keterangan:**
 >
-> * 1.9 merupakan versi upstream.
+> * 1.9 merupakan versi upstream/hulu.
 > * 1 merupakan versi Debian.
-> * [unstable][1] merupakan kode rilis Debian
+> * [unstable][1] merupakan kode rilis paket Debian, nilai unstable umumnya digunakan untuk paket baru, versi terbaru dari paket upstream/hulu dan perbaikan kutu, sedangkan nilai experimental umumnya digunakan saat pengembang melakukan uji coba (versi beta) sebelum paket itu dirilis untuk Debian (nilainya experimental, unstable, testing dan stable). Lihat [Debian Developer's Reference](https://www.debian.org/doc/manuals/developers-reference/ch04.en.html#archive) dan [The Debian Administrator's Handbook](https://debian-handbook.info/browse/stable/sect.release-lifecycle.html) untuk informasi lebih lanjut.
 > * [urgency][2]=low merupakan deskripsi tentang seberapa pentingnya peningkatan versi dari versi sebelumnya (nilainya low, medium, high, emergency, atau critical).
 
  Menjadi
@@ -240,7 +240,7 @@ ed (1.9-0blankon1) tambora; urgency=low
 
 > **Keterangan:**
 >
-> + 1.9 merupakan versi upstream.
+> + 1.9 merupakan versi upstream/hulu.
 > + 0 merupakan versi Debian.
 > + blankon1 merupakan versi Blankon.
 > + tambora merupakan kode rilis Blankon.
@@ -380,5 +380,5 @@ $ lintian -iIEv --pedantic ../*.changes
 
  Selesai.
 
-[1]: https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Standards-Version "Standards-Version"
+[1]: https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Distribution
 [2]: https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Urgency "Urgency"
