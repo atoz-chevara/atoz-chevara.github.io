@@ -226,7 +226,7 @@ ed (1.9-1) unstable; urgency=low
 <li>1.9 merupakan versi upstream/hulu.</li>
 <li>1 merupakan versi Debian.</li>
 <li><a href="https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Distribution" target="_blank">unstable</a> merupakan kode rilis paket Debian, nilai unstable umumnya digunakan untuk paket baru, versi terbaru dari paket upstream/hulu dan perbaikan kutu, sedangkan nilai experimental umumnya digunakan saat pengembang melakukan uji coba (versi beta) sebelum paket itu dirilis untuk Debian (nilainya experimental, unstable, testing dan stable). Lihat <a href="https://www.debian.org/doc/manuals/developers-reference/ch04.en.html#archive" target="_blank">Debian Developer's Reference</a> dan <a href="https://debian-handbook.info/browse/stable/sect.release-lifecycle.html" target="_blank">The Debian Administrator's Handbook</a> untuk informasi lebih lanjut.</li>
-<li><a href="https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Urgency" target="_blank">rgency=low</a> merupakan deskripsi tentang seberapa pentingnya peningkatan versi dari versi sebelumnya (nilainya low, medium, high, emergency, atau critical).</li>
+<li><a href="https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Urgency" target="_blank">urgency=low</a> merupakan deskripsi tentang seberapa pentingnya peningkatan versi dari versi sebelumnya (nilainya low, medium, high, emergency, atau critical).</li>
 </ul>
 </div>
 
