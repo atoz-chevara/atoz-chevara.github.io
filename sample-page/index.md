@@ -106,21 +106,23 @@ Make any link standout more when applying the `.btn` class.
 Add notes when applying the `.alert` class.
 
 {% highlight html %}
-<div class="alert alert.note">**Note:** When asked to enter your email address, ensure that you enter the [verified email address](/articles/verifying-your-email-address) for your GitHub account.</div>
+<div class="alert note">**Note:** When asked to enter your email address, ensure that you enter the [verified email address](/articles/verifying-your-email-address) for your GitHub account.</div>
 {% endhighlight %}
 
 <div markdown="0">
-<div class="alert alert.note">
+<div class="alert note">
 <p>**Note:** When asked to enter your email address, ensure that you enter the <a href="/articles/verifying-your-email-address">verified email address</a> for your GitHub account.</p>
 </div>
 </div>
+
 <div markdown="0">
-<div class="alert alert.warning">
+<div class="alert warning">
 <p>**Warning:** When asked to enter your email address, ensure that you enter the <a href="/articles/verifying-your-email-address">verified email address</a> for your GitHub account.</p>
 </div>
 </div>
+
 <div markdown="0">
-<div class="alert alert.danger">
+<div class="alert danger">
 <p>**Danger:** When asked to enter your email address, ensure that you enter the <a href="/articles/verifying-your-email-address">verified email address</a> for your GitHub account.</p>
 </div>
 </div>
