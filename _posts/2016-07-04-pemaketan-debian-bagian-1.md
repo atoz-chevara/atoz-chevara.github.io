@@ -243,7 +243,7 @@ diperoleh ketika kita melaporkan paket yang ingin ditambahkan/kelola melalui <a 
 </div>
 
 <div class="alert alert-note"><strong>Catatan:</strong>
-Bila ingin memaketkan untuk Debian silahkan hapus keterangan <em>nnnn is the bug number of your ITP</em>. 
+<p>Bila ingin memaketkan untuk Debian silahkan hapus keterangan <em>nnnn is the bug number of your ITP</em>.</p> 
 </div>
 
  Menjadi
@@ -360,15 +360,20 @@ check done
 {% endhighlight %}
 
  Apabila hasilnya tidak seperti diatas maka lakukan penyuntingan kembali sesuai 
- dengan output dari perintah *cme*. Langkah selanjutnya kita akan mulai membuat paket Debian.
+ dengan output dari perintah *cme*.
+ 
+### Paketkan.
+ 
+ Langkah selanjutnya kita akan mulai membuat paket Debian.
 
 {% highlight bash %}
 $ dpkg-buildpackage -rfakeroot
 {% endhighlight %}
 
-<div class="alert alert-warning"><strong>Catatan:</strong> Tunggulah hingga proses selesai, karena nantinya akan diminta <em>passphrase</em> yang dibuat saat membuat kunci GnuPG. Apabila hal ini terlewati maka pembuatan paket akan galat/gagal.</div>
+<div class="alert alert-warning"><strong>Catatan:</strong>
+<p>Tunggulah hingga proses selesai, karena nantinya akan diminta <em>passphrase</em> yang dibuat saat membuat kunci GnuPG. Apabila hal ini terlewati maka pembuatan paket akan galat/gagal.</p></div>
 
-### Paket versi BlankOn.
+#### Paket versi BlankOn.
 
  Lihat hasilnya
 
@@ -383,7 +388,7 @@ ed_1.9-0blankon1_armhf.deb
 ed_1.9.orig.tar.gz
 {% endhighlight %}
 
-### Paket versi Debian.
+#### Paket versi Debian.
 
  Bila memaketkan ke versi Debian hasilnya seperti ini
  
