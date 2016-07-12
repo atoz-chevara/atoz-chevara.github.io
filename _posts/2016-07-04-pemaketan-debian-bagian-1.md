@@ -417,6 +417,13 @@ $ lintian -iIEv --pedantic ../*.changes
 
  Selesai.
 
+## Rujukan
+
++ [Debian Policy Manual.](https://www.debian.org/doc/debian-policy/)
++ [Debian New Maintainers' Guide.](https://www.debian.org/doc/manuals/maint-guide/)
++ [Guide for Debian Maintainers](https://www.debian.org/doc/manuals/debmake-doc/
++ [Panduan Pembuatan Paket BlankOn](http://dev.blankonlinux.or.id/wiki/Pemaket/PanduanPembuatanPaketMotu)
+
 ---
 
 [^1]: Dilain kesempatan kita akan bahas bagaimana cara menyunting berkas *postinst, postrm, preinst, prerm, dll*.
