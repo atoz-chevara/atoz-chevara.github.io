@@ -214,7 +214,16 @@ $ tree -D ../debian/
 
 {% highlight bash %}
 $ dch -e
+{% endhighlight %}
 
+<div class="alert alert-note"><strong>Keterangan:</strong>
+<ol>
+<li>Perintah <em>dch -e</em> digunakan untuk penyuntingan awal.</li>
+<li>Perintah <em>dch -i</em> digunakan untuk penyuntingan selanjutnya ataupun pemaket lainnya.</li>
+</ol>
+</div>
+
+{% highlight bash %}
 ed (1.9-1) unstable; urgency=low
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
@@ -228,6 +237,7 @@ ed (1.9-1) unstable; urgency=low
 <li>1 merupakan versi Debian.</li>
 <li><a href="https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Distribution" target="_blank">unstable</a> merupakan kode rilis paket Debian, nilai unstable umumnya digunakan untuk paket baru, versi terbaru dari paket upstream/hulu dan perbaikan kutu, sedangkan nilai experimental umumnya digunakan saat pengembang melakukan uji coba (versi beta) sebelum paket itu dirilis untuk Debian (nilainya experimental, unstable, testing dan stable). Lihat <a href="https://www.debian.org/doc/manuals/developers-reference/ch04.en.html#archive" target="_blank">Debian Developer's Reference</a> dan <a href="https://debian-handbook.info/browse/stable/sect.release-lifecycle.html" target="_blank">The Debian Administrator's Handbook</a> untuk informasi lebih lanjut.</li>
 <li><a href="https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Urgency" target="_blank">urgency=low</a> merupakan deskripsi tentang seberapa pentingnya peningkatan versi dari versi sebelumnya (nilainya low, medium, high, emergency, atau critical).</li>
+<li><em>nnnn</em> merupakan nomor kutu [Intent to Package (ITP)](1), bila kita ingin menambahkan paket baru ke Debian maka nomor ini harus diisi.</li>
 </ul>
 </div>
 
@@ -248,13 +258,6 @@ ed (1.9-0blankon1) tambora; urgency=low
 <li>blankon1 merupakan versi Blankon.</li>
 <li>tambora merupakan kode rilis Blankon.</li>
 </ul>
-</div>
-
-<div class="alert alert-note"><strong>Catatan:</strong>
-<ol>
-<li>Perintah <em>dch -e</em> digunakan untuk penyuntingan awal.</li>
-<li>Perintah <em>dch -i</em> digunakan untuk penyuntingan selanjutnya ataupun pemaket lainnya.</li>
-</ol>
 </div>
 
 ##### Sunting berkas control.
@@ -384,5 +387,7 @@ $ lintian -iIEv --pedantic ../*.changes
  Selesai.
 
 ---
+
+[1]: https://wiki.debian.org/ITP
 
 [^1]: Dilain kesempatan kita akan bahas bagaimana cara menyunting berkas *postinst, postrm, preinst, prerm, dll*.
