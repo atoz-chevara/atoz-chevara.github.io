@@ -403,6 +403,10 @@ ed_1.9-1_armhf.deb
 ed_1.9.orig.tar.gz
 {% endhighlight %}
 
+ Saya membangun paket pada mesin [ARM Raspberry 2 model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/),
+ hasil yang ditampilkan akan berbeda bila Anda membangun paket pada mesin berarsitektur 32-bit dan 64-bit, saya merekomendasikan Anda untuk membangun paket pada mesin 64-bit. Silahkan lihat arsitektur apa saja yang di dukung
+ pada halaman [Ports website Debian](https://www.debian.org/ports/#portlist-released).
+
 ### Pemeriksaan paket.
 
  Periksa paket dengan menggunakan *lintian*	
