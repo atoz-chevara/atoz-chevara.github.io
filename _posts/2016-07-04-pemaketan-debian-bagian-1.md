@@ -2,7 +2,7 @@
 layout: post
 title: "Pemaketan Debian - Bagian 1"
 description: "Pedoman pemaketan dasar Debian."
-modified: 2016-07-11
+modified: 2016-07-12
 tags: [debian, blankon, pemaketan]
 image:
   background: triangular.png
@@ -181,7 +181,7 @@ ed-1.9  ed-1.9.tar.gz  ed_1.9.orig.tar.gz
  Dari hasil perintah *tree* kita bisa melihat ada penambahan direktori *debian* dan *debian/source* 
  dan juga salinan dari paket sumber yaitu *ed_1.9.orig.tar.gz*.
 
- Mari kita hapus beberapa berkas yang tidak diperlukan pada direktori *debian*.
+ Mari kita hapus beberapa berkas yang saat tidak diperlukan[^1] pada direktori *debian*.
 
 {% highlight bash %}
 $ cd debian
@@ -382,3 +382,7 @@ $ lintian -iIEv --pedantic ../*.changes
 {% endhighlight %}
 
  Selesai.
+
+---
+
+[^1]: Dilain kesempatan kita akan bahas bagaimana cara menyunting berkas *postinst, postrm, preinst, prerm, dll*.
