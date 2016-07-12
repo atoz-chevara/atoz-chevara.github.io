@@ -421,7 +421,7 @@ $ lintian -iIEv --pedantic ../*.changes
 
 + [Debian Policy Manual.](https://www.debian.org/doc/debian-policy/)
 + [Debian New Maintainers' Guide.](https://www.debian.org/doc/manuals/maint-guide/)
-+ [Guide for Debian Maintainers](https://www.debian.org/doc/manuals/debmake-doc/
++ [Guide for Debian Maintainers](https://www.debian.org/doc/manuals/debmake-doc/)
 + [Panduan Pembuatan Paket BlankOn](http://dev.blankonlinux.or.id/wiki/Pemaket/PanduanPembuatanPaketMotu)
 
 ---
