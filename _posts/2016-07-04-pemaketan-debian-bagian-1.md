@@ -237,8 +237,13 @@ ed (1.9-1) unstable; urgency=low
 <li>1 merupakan versi Debian.</li>
 <li><a href="https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Distribution" target="_blank">unstable</a> merupakan kode rilis paket Debian, nilai unstable umumnya digunakan untuk paket baru, versi terbaru dari paket upstream/hulu dan perbaikan kutu, sedangkan nilai experimental umumnya digunakan saat pengembang melakukan uji coba (versi beta) sebelum paket itu dirilis untuk Debian (nilainya experimental, unstable, testing dan stable). Lihat <a href="https://www.debian.org/doc/manuals/developers-reference/ch04.en.html#archive" target="_blank">Debian Developer's Reference</a> dan <a href="https://debian-handbook.info/browse/stable/sect.release-lifecycle.html" target="_blank">The Debian Administrator's Handbook</a> untuk informasi lebih lanjut.</li>
 <li><a href="https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Urgency" target="_blank">urgency=low</a> merupakan deskripsi tentang seberapa pentingnya peningkatan versi dari versi sebelumnya (nilainya low, medium, high, emergency, atau critical).</li>
-<li><em>nnnn</em> merupakan nomor kutu <a href="https://wiki.debian.org/ITP" target="_blank">Intent to Package (ITP)</a>, bila kita ingin menambahkan paket baru ke Debian maka nomor ini harus diisi.</li>
+<li><em>nnnn</em> merupakan nomor kutu <a href="https://wiki.debian.org/ITP" target="_blank">Intent to Package (ITP)</a> yang
+diperoleh ketika kita melaporkan paket yang ingin ditambahkan/kelola melalui <a href="https://www.debian.org/Bugs/" target="_blank">Debian Bug Tracking System (Debian BTS)</a>.</li>
 </ul>
+</div>
+
+<div class="alert alert-note"><strong>Catatan:</strong>
+Bila ingin memaketkan untuk Debian silahkan hapus <em>nnnn is the bug number of your ITP</em>. 
 </div>
 
  Menjadi
