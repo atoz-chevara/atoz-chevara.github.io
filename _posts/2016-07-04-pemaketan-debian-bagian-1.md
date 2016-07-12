@@ -243,7 +243,7 @@ diperoleh ketika kita melaporkan paket yang ingin ditambahkan/kelola melalui <a 
 </div>
 
 <div class="alert alert-note"><strong>Catatan:</strong>
-Bila ingin memaketkan untuk Debian silahkan hapus <em>nnnn is the bug number of your ITP</em>. 
+Bila ingin memaketkan untuk Debian silahkan hapus keterangan <em>nnnn is the bug number of your ITP</em>. 
 </div>
 
  Menjadi
