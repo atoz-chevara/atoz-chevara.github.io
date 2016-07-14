@@ -52,6 +52,8 @@ Tor 6416</a> dan <a href="http://www.gl-inet.com/firmware/ar150/tor/" target="_b
  Setelah upgrade firmware selesai, Anda bisa mengakses jaringan Tor melalui SSID **tor** dengan
  password **goodlife** atau melalui **kabel LAN**, sedangkan SSID **OpenWrt** dengan password **goodlife** untuk mengakses
  jaringan tanpa Tor sekaligus mengkonfigurasi GL.iNet.
+
+### Menjadikan GL.iNet sebagai Repeater.
  
  Anda bisa mengganti password serta SSID **tor** dan **OpenWrt** dengan mengakses SSID **OpenWrt**
  terlebih dahulu, berhubung saya menggunakan GL.iNet sebagai repeater untuk terhubung ke jaringan
@@ -59,6 +61,14 @@ Tor 6416</a> dan <a href="http://www.gl-inet.com/firmware/ar150/tor/" target="_b
  
  + Ubah **INTERNET CONFIGURATION** dari **PROTOCOL DHCP** ke **WiFi**
  melalui [Domino Web Panel](http://192.168.8.1/cgi-bin/luci/webpanel/).
+ 
+<figure class="half">
+	<img src="/images/tor1.png" alt="">
+	<img src="/images/tor2.png" alt="">
+	<img src="/images/tor3.png" alt="">
+	<figcaption>repeater-mode.</figcaption>
+</figure>
+ 
  + Masuk ke [LUCI Web Panel](http://192.168.8.1/cgi-bin/luci/admin/) pilih menu
  *Network > Interfaces* dan ubah *network interface* **LAN**, **TOR** dan **TOR1**
  dengan memilih *Edit*, pada *DHCP Server* pilih tab *Advenced Settings*, isikan kolom
