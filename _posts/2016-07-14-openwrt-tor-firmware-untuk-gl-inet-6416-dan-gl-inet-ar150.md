@@ -175,9 +175,11 @@ ssh root@192.168.8.1
 # reboot
 {% endhighlight %}
  
- Selesai...silahkan menikmati akses internet secara anonym melalui Tor dengan menghubungkan
- perangkat Anda ke SSID **Tor** atau kabel **LAN** dan sampai nanti di tulisan berikutnya.
-
+ Silahkan hubungkan perangkat Anda ke SSID **OpenWrt** terlebih dulu, akses halaman
+ login **@wifi.id** hingga GL.iNet terhubung ke intenet, kemudian disconnect dari SSID **OpenWrt**
+ untuk menikmati akses internet secara anonym melalui Tor dengan menghubungkan
+ perangkat Anda ke SSID **Tor** atau kabel **LAN**. Sampai nanti di tulisan berikutnya.
+ 
 ## Rujukan
 
 + [New Tor firmware for GL-AR150 and GL.iNet6416](http://www.gl-inet.com/new-tor-firmware-for-gl-ar150-and-gl-inet6416/)
