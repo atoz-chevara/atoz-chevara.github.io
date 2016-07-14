@@ -352,7 +352,7 @@ License: GPL-3.0+
  terlebih dahulu
 
 {% highlight bash %}
-$ sudo apt-get install -y libconfig-model-dpkg-perl
+$ sudo apt-get install -y install cme libconfig-model-dpkg-perl libconfig-model-tkui-perl
 $ cme check dpkg
 loading data
 checking data
@@ -360,7 +360,21 @@ check done
 {% endhighlight %}
 
  Apabila hasilnya tidak seperti diatas maka lakukan penyuntingan kembali sesuai 
- dengan output dari perintah *cme*.
+ dengan output dari perintah *cme*. Anda juga bisa menyunting paket Debian dengan GUI,
+ silahkan jalankan diterminal:
+ 
+{% highlight bash %}
+$ cme edit dpkg
+{% endhighlight %}
+
+ Akan tampil jendela baru seperti gambar dibawah ini
+ 
+<figure>
+	<a href="/images/cme-dpkg-001.png"><img src="/images/cme-dpkg-001.png" alt="Langkah 4"></a>
+	<figcaption>cme GUI.</figcaption>
+</figure>
+
+ Cara penggunaan bisa melihat [disini][1].
  
 ### Paketkan.
  
@@ -423,7 +437,10 @@ $ lintian -iIEv --pedantic ../*.changes
 + [Debian New Maintainers' Guide.](https://www.debian.org/doc/manuals/maint-guide/)
 + [Guide for Debian Maintainers.](https://www.debian.org/doc/manuals/debmake-doc/)
 + [Panduan Pembuatan Paket BlankOn.](http://dev.blankonlinux.or.id/wiki/Pemaket/PanduanPembuatanPaketMotu)
++ [Managing Debian packages with cme](https://github.com/dod38fr/config-model/wiki/Managing-Debian-packages-with-cme)
++ [Updating debian copyright file with cme](https://github.com/dod38fr/config-model/wiki/Updating-debian-copyright-file-with-cme)
 
 ---
 
+[1]: https://github.com/dod38fr/config-model/wiki/Managing-Debian-packages-with-cme
 [^1]: Dilain kesempatan kita akan bahas bagaimana cara menyunting berkas *postinst, postrm, preinst, prerm, dll*.
