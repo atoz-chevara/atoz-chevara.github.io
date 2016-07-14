@@ -55,14 +55,6 @@ Tor 6416</a> dan <a href="http://www.gl-inet.com/firmware/ar150/tor/" target="_b
 
 ### Menjadikan GL.iNet sebagai Repeater.
  
- Anda bisa mengganti password serta SSID **tor** dan **OpenWrt** dengan mengakses SSID **OpenWrt**
- terlebih dahulu.
-
-<figure>
-	<a href="/images/tor1.png"><img src="/images/tor1.png" alt="Langkah 1"></a>
-	<figcaption>Ubah SSID dan Password.</figcaption>
-</figure> 
- 
  Berhubung saya menggunakan GL.iNet sebagai repeater untuk terhubung ke jaringan
  **@wifi.id** maka:
  
@@ -70,10 +62,18 @@ Tor 6416</a> dan <a href="http://www.gl-inet.com/firmware/ar150/tor/" target="_b
  melalui [Domino Web Panel](http://192.168.8.1/cgi-bin/luci/webpanel/).
  
 <figure class="third">
-	<a href="/images/tor2.png"><img src="/images/tor2.png" alt="Langkah 2"></a>
-	<a href="/images/tor3.png"><img src="/images/tor3.png" alt="Langkah 3"></a>
-	<a href="/images/tor4.png"><img src="/images/tor4.png" alt="Langkah 4"></a>
+	<a href="/images/tor1.png"><img src="/images/tor2.png" alt="Langkah 1"></a>
+	<a href="/images/tor2.png"><img src="/images/tor3.png" alt="Langkah 2"></a>
+	<a href="/images/tor3.png"><img src="/images/tor4.png" alt="Langkah 3"></a>
 	<figcaption>Repeater-Mode.</figcaption>
+</figure>
+
+ Anda bisa mengganti password serta SSID **tor** dan **OpenWrt** dengan mengakses SSID **OpenWrt**
+ terlebih dahulu.
+
+<figure>
+	<a href="/images/tor4.png"><img src="/images/tor4.png" alt="Langkah 4"></a>
+	<figcaption>Ubah SSID dan Password.</figcaption>
 </figure>
  
  + Masuk ke [LUCI Web Panel](http://192.168.8.1/cgi-bin/luci/admin/) pilih menu
