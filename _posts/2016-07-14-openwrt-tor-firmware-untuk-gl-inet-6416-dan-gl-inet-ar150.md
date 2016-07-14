@@ -163,7 +163,7 @@ ssh root@192.168.8.1
         done
 {% endhighlight %}
 
- Silahkan jalankan ulang *service firewall*:
+ + Silahkan jalankan ulang *service firewall*:
 
 {% highlight bash %}
 # /etc/init.d/firewall restart
@@ -174,11 +174,20 @@ ssh root@192.168.8.1
 {% highlight bash %}
 # reboot
 {% endhighlight %}
+
+<div class="alert alert-note"><strong>Catatan:</strong>
+<p>Tor memerlukan akses ke internet untuk terhubung ke jaringannya, ini memerlukan waktu agar koneksi
+Tor stabil, pastikan terlebih dulu GL.iNet Anda telah sukses terhubung ke internet dengan menghubungkan
+perangkat ke SSID <strong>OpenWrt</strong>.</p></div>
  
- Silahkan hubungkan perangkat Anda ke SSID **OpenWrt** terlebih dulu, akses halaman
- login **@wifi.id** hingga GL.iNet terhubung ke intenet, kemudian disconnect dari SSID **OpenWrt**
- untuk menikmati akses internet secara anonym melalui Tor dengan menghubungkan
- perangkat Anda ke SSID **Tor** atau kabel **LAN**. Sampai nanti di tulisan berikutnya.
+ + Silahkan hubungkan perangkat Anda ke SSID **OpenWrt** terlebih dulu, akses halaman
+ login **@wifi.id** hingga GL.iNet terhubung ke internet, tunggulah beberapa saat agar
+ Tor terhubung ke jaringan, kemudian disconnect dari SSID **OpenWrt** untuk menikmati
+ akses internet secara anonym melalui Tor dengan menghubungkan perangkat Anda ke
+ SSID **Tor** atau kabel **LAN**, akses ke alamat [`https://check.torproject.org/?lang=id`](https://check.torproject.org/?lang=id)
+ untuk memastikan Anda terhubung secara anonym.
+ 
+ Sampai nanti di tulisan berikutnya.
  
 ## Rujukan
 
