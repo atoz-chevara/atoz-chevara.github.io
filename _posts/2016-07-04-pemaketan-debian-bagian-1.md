@@ -374,7 +374,7 @@ $ cme edit dpkg
 	<figcaption>cme GUI.</figcaption>
 </figure>
 
- Cara penggunaan bisa melihat [disini][1].
+ Cara penggunaan silahkan lihat [disini][1].
  
 ### Paketkan.
  
