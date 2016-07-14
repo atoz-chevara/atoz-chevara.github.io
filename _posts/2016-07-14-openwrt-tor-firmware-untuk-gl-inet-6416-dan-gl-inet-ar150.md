@@ -62,9 +62,9 @@ Tor 6416</a> dan <a href="http://www.gl-inet.com/firmware/ar150/tor/" target="_b
  melalui [Domino Web Panel](http://192.168.8.1/cgi-bin/luci/webpanel/).
  
 <figure class="third">
-	<a href="/images/tor1.png"><img src="/images/tor2.png" alt="Langkah 1"></a>
-	<a href="/images/tor2.png"><img src="/images/tor3.png" alt="Langkah 2"></a>
-	<a href="/images/tor3.png"><img src="/images/tor4.png" alt="Langkah 3"></a>
+	<a href="/images/tor1.png"><img src="/images/tor1.png" alt="Langkah 1"></a>
+	<a href="/images/tor2.png"><img src="/images/tor2.png" alt="Langkah 2"></a>
+	<a href="/images/tor3.png"><img src="/images/tor3.png" alt="Langkah 3"></a>
 	<figcaption>Repeater-Mode.</figcaption>
 </figure>
 
@@ -84,8 +84,8 @@ Tor 6416</a> dan <a href="http://www.gl-inet.com/firmware/ar150/tor/" target="_b
  saya tambahkan juga *Google DNS*, untuk pilihan **DNS** terakhir terserah Anda. Kemudian *Save & Apply*.
 
 <div class="alert alert-note"><strong>Catatan:</strong>
-<p>Pada beberapa kasus, halaman login pada **@wifi.id** tidak dapat ditampilkan, silahkan
-menambahkan alamat ip *1.1.1.1* setelah alamat ip **DNS @wifi.id**.</p></div>
+<p>Pada beberapa kasus, halaman login pada <strong>@wifi.id</strong> tidak dapat ditampilkan, silahkan
+menambahkan alamat ip <em>1.1.1.1</em> setelah alamat ip <strong>DNS @wifi.id</strong>.</p></div>
  
 <figure>
 	<a href="/images/tor5.png"><img src="/images/tor5.png" alt="Langkah 5"></a>
