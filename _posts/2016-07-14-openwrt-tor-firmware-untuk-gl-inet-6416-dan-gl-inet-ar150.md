@@ -56,16 +56,23 @@ Tor 6416</a> dan <a href="http://www.gl-inet.com/firmware/ar150/tor/" target="_b
 ### Menjadikan GL.iNet sebagai Repeater.
  
  Anda bisa mengganti password serta SSID **tor** dan **OpenWrt** dengan mengakses SSID **OpenWrt**
- terlebih dahulu, berhubung saya menggunakan GL.iNet sebagai repeater untuk terhubung ke jaringan
+ terlebih dahulu.
+
+<figure>
+	<a href="/images/tor1.png"><img src="/images/tor1.png" alt="Langkah 1"></a>
+	<figcaption>Ubah SSID dan Password.</figcaption>
+</figure> 
+ 
+ Berhubung saya menggunakan GL.iNet sebagai repeater untuk terhubung ke jaringan
  **@wifi.id** maka:
  
  + Ubah **INTERNET CONFIGURATION** dari **PROTOCOL DHCP** ke **WiFi**
  melalui [Domino Web Panel](http://192.168.8.1/cgi-bin/luci/webpanel/).
  
 <figure class="third">
-	<a href="/images/tor1.png"><img src="/images/tor1.png" alt="Langkah 1"></a>
 	<a href="/images/tor2.png"><img src="/images/tor2.png" alt="Langkah 2"></a>
 	<a href="/images/tor3.png"><img src="/images/tor3.png" alt="Langkah 3"></a>
+	<a href="/images/tor4.png"><img src="/images/tor4.png" alt="Langkah 4"></a>
 	<figcaption>Repeater-Mode.</figcaption>
 </figure>
  
@@ -73,11 +80,11 @@ Tor 6416</a> dan <a href="http://www.gl-inet.com/firmware/ar150/tor/" target="_b
  *Network > Interfaces* dan ubah *network interface* **LAN**, **TOR** dan **TOR1**
  dengan memilih *Edit*, pada *DHCP Server* pilih tab *Advenced Settings*, isikan kolom
  *DHCP-Options* dengan alamat *DNS* **@wifi.id**,
- contoh: untuk interface **LAN** saya isikan *6,192.168.8.1,10.232.0.4,118.98.44.10,8.8.8.8,8.8.4.4*
+ contoh: untuk interface **LAN** saya isikan *6,10.232.0.4,118.98.44.10,192.168.8.1,8.8.8.8,8.8.4.4*
  saya tambahkan juga *Google DNS*, untuk pilihan **DNS** terakhir terserah Anda. Kemudian *Save & Apply*.
 
 <figure>
-	<a href="/images/tor4.png"><img src="/images/tor4.png" alt="Langkah 4"></a>
+	<a href="/images/tor5.png"><img src="/images/tor5.png" alt="Langkah 5"></a>
 	<figcaption>Setting DNS.</figcaption>
 </figure>
  
@@ -105,6 +112,11 @@ enable_transparent_tor() {
 }
 enable_transparent_tor
 {% endhighlight %}
+
+<figure>
+	<a href="/images/tor6.png"><img src="/images/tor6.png" alt="Langkah 6"></a>
+	<figcaption>Setting Firewall.</figcaption>
+</figure>
 
  jangan lupa lakukan *Submit*.
 
