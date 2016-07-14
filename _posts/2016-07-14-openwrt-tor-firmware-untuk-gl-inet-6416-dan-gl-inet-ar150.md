@@ -83,6 +83,10 @@ Tor 6416</a> dan <a href="http://www.gl-inet.com/firmware/ar150/tor/" target="_b
  contoh: untuk interface **LAN** saya isikan *6,10.232.0.4,118.98.44.10,192.168.8.1,8.8.8.8,8.8.4.4*
  saya tambahkan juga *Google DNS*, untuk pilihan **DNS** terakhir terserah Anda. Kemudian *Save & Apply*.
 
+<div class="alert alert-note"><strong>Catatan:</strong>
+<p>Pada beberapa kasus, halaman login pada **@wifi.id** tidak dapat ditampilkan, silahkan
+menambahkan alamat ip *1.1.1.1* setelah alamat ip **DNS @wifi.id**.</p></div>
+ 
 <figure>
 	<a href="/images/tor5.png"><img src="/images/tor5.png" alt="Langkah 5"></a>
 	<figcaption>Setting DNS.</figcaption>
