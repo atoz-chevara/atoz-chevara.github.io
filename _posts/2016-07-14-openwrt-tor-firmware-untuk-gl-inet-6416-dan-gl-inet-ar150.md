@@ -66,7 +66,7 @@ Tor 6416</a> dan <a href="http://www.gl-inet.com/firmware/ar150/tor/" target="_b
 	<a href="/images/tor1.png"><img src="/images/tor1.png" alt="Langkah 1"></a>
 	<a href="/images/tor2.png"><img src="/images/tor2.png" alt="Langkah 2"></a>
 	<a href="/images/tor3.png"><img src="/images/tor3.png" alt="Langkah 3"></a>
-	<figcaption>repeater-mode.</figcaption>
+	<figcaption>Repeater-Mode.</figcaption>
 </figure>
  
  + Masuk ke [LUCI Web Panel](http://192.168.8.1/cgi-bin/luci/admin/) pilih menu
@@ -75,6 +75,12 @@ Tor 6416</a> dan <a href="http://www.gl-inet.com/firmware/ar150/tor/" target="_b
  *DHCP-Options* dengan alamat *DNS* **@wifi.id**,
  contoh: untuk interface **LAN** saya isikan *6,192.168.8.1,10.232.0.4,118.98.44.10,8.8.8.8,8.8.4.4*
  saya tambahkan juga *Google DNS*, untuk pilihan **DNS** terakhir terserah Anda. Kemudian *Save & Apply*.
+
+<figure>
+	<a href="/images/tor4.png"><img src="/images/tor4.png" alt="Langkah 4"></a>
+	<figcaption>Setting DNS.</figcaption>
+</figure>
+ 
  + Masih di [LUCI Web Panel](http://192.168.8.1/cgi-bin/luci/admin/) pilih menu
  *Network > Firewall > Custom Rules* dan ubah pada:
  
@@ -88,7 +94,7 @@ enable_transparent_tor() {
 enable_transparent_tor
 {% endhighlight %}
 
- Menjadi
+ menjadi
  
 {% highlight bash %}
 enable_transparent_tor() {
@@ -99,6 +105,8 @@ enable_transparent_tor() {
 }
 enable_transparent_tor
 {% endhighlight %}
+
+ jangan lupa lakukan *Submit*.
 
  + Akses GL.iNet melalui ssh dan masukkan password root Anda.
 
