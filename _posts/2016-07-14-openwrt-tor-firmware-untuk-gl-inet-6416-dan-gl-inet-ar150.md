@@ -4,7 +4,8 @@ title: "OpenWrt+Tor firmware untuk GL.iNet 6416 dan GL.iNet AR150"
 description: "Upgrade GL.iNet firmware dengan OpenWrt-Tor."
 tags: [openwrt, glinet, firmware, 6416, ar150]
 image:
-  background: triangular.png
+  feature: tor.png
+  credit: atoz-chevara
 comments: true
 ---
 
