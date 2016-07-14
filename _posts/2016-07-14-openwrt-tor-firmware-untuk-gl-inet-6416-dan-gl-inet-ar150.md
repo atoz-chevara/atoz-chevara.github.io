@@ -147,7 +147,7 @@ ssh root@192.168.8.1
  
  ubah
 
-{% highlight bash %} 
+{% highlight bash %}
  start() {
         while [ -z "$(ifconfig wlan0)" -a -z "$(ifconfig eth1)" ]; do
                 sleep 5
@@ -156,7 +156,7 @@ ssh root@192.168.8.1
 		
  menjadi
 
-{% highlight bash %} 
+{% highlight bash %}
  start() {
         while [ -z "$(ifconfig wlan0-1)" -a -z "$(ifconfig eth1)" ]; do
                 sleep 5
