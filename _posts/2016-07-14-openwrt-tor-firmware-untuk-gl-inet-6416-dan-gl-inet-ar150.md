@@ -46,7 +46,7 @@ Tor 6416</a> dan <a href="http://www.gl-inet.com/firmware/ar150/tor/" target="_b
 
  Silahkan lihat video berikut:
  
-<iframe width="560" height="315" src="//www.youtube.com/watch?v=EYBdryKP7fc" frameborder="0"> </iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/EYBdryKP7fc" frameborder="0"> </iframe>
 
  Setelah upgrade firmware selesai, Anda bisa mengakses jaringan Tor melalui SSID **tor** dengan
  password **goodlife** atau melalui **kabel LAN**, sedangkan SSID **OpenWrt** dengan password **goodlife** untuk mengakses
