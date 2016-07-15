@@ -72,7 +72,7 @@ Tor 6416</a> dan <a href="http://www.gl-inet.com/firmware/ar150/tor/" target="_b
  terlebih dahulu.
 
 <figure>
-	<a href="/images/tor4.png"><img src="/images/tor4.png" alt="Langkah 4"></a>
+	<a href="/images/tor4.png"><img src="/images/tor4.png" alt="Langkah 4" width="740px" /></a>
 	<figcaption>Ubah SSID dan Password.</figcaption>
 </figure>
  
@@ -88,7 +88,7 @@ Tor 6416</a> dan <a href="http://www.gl-inet.com/firmware/ar150/tor/" target="_b
 menambahkan alamat ip <em>1.1.1.1</em> setelah alamat ip <strong>DNS @wifi.id</strong>.</p></div>
  
 <figure>
-	<a href="/images/tor5.png"><img src="/images/tor5.png" alt="Langkah 5"></a>
+	<a href="/images/tor5.png"><img src="/images/tor5.png" alt="Langkah 5" width="740px" /></a>
 	<figcaption>Setting DNS.</figcaption>
 </figure>
  
@@ -118,7 +118,7 @@ enable_transparent_tor
 {% endhighlight %}
 
 <figure>
-	<a href="/images/tor6.png"><img src="/images/tor6.png" alt="Langkah 6"></a>
+	<a href="/images/tor6.png"><img src="/images/tor6.png" alt="Langkah 6" width="740px" /></a>
 	<figcaption>Setting Firewall.</figcaption>
 </figure>
 
