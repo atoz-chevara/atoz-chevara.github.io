@@ -2,7 +2,6 @@
 layout: post
 title: "Menambahkan Notes di tema Jekyll HPSTR"
 description: "Modifikasi tema Jekyll HPSTR."
-modified: 2016-07-12
 tags: [theme, jekyll, hpstr]
 image:
   background: triangular.png
@@ -11,10 +10,10 @@ comments: true
 
 ## Modifikasi tema Jekyll HPSTR
 
- Sebelum menambahkan class notes pada css di tema HPSTR yang saya gunakan, saya sebelumnya menggunakan
- sintak markdown `blockquotes` untuk menampilkan keterangan ataupun catatan, setelah saya ngulik sedikit dokumentasi GitHub,
- akhirnya saya menambahkan berkas baru untuk pada direktori `_sass/` dan menamakan berkas tersebut
- dengan `_alert.scss`.
+ Sebelum menambahkan class notes pada css di [tema Jekyll HPSTR](https://mademistakes.com/work/hpstr-jekyll-theme/) 
+ yang saya gunakan, saya sebelumnya menggunakan sintak markdown `blockquotes` untuk menampilkan keterangan
+ ataupun catatan, setelah saya ngulik sedikit dokumentasi GitHub, akhirnya saya menambahkan berkas
+ baru untuk pada direktori `_sass/` dan menamakan berkas tersebut dengan `_alert.scss`.
  
  isinya seperti berikut:
  
