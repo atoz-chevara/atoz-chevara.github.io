@@ -370,7 +370,7 @@ $ cme edit dpkg
  Akan tampil jendela baru seperti gambar dibawah ini
  
 <figure>
-	<a href="/images/cme-dpkg-001.png"><img src="/images/cme-dpkg-001.png" alt="Langkah 4"></a>
+	<a href="/images/cme-dpkg-001.png"><img src="/images/cme-dpkg-001.png" alt="Langkah 4" width="740px" /><></a>
 	<figcaption>cme GUI.</figcaption>
 </figure>
 
