@@ -2,7 +2,7 @@
 layout: post
 title: "Pemaketan Debian - Bagian 1"
 description: "Pedoman pemaketan dasar Debian."
-modified: 2016-07-12
+modified: 2016-07-29
 tags: [debian, blankon, pemaketan]
 image:
   background: triangular.png
@@ -185,7 +185,7 @@ ed-1.9  ed-1.9.tar.gz  ed_1.9.orig.tar.gz
 
 {% highlight bash %}
 $ cd debian
-$ rm *.ex *.EX README.* docs info
+$ rm *.ex *.EX README.* *.docs info
 {% endhighlight %}
 
  Hasilnya akan seperti ini
@@ -280,7 +280,7 @@ Maintainer: Nama Anda <email@anda.com>
 Build-Depends: debhelper (>= 9), autotools-dev
 Standards-Version: 3.9.9
 Homepage: http://www.gnu.org/software/ed/
-Vcs-Git: cvs.savannah.gnu.org:/web/ed
+Vcs-Cvs: cvs.savannah.gnu.org:/web/ed
 Vcs-Browser: http://web.cvs.savannah.gnu.org/viewvc/?root=ed
 
 Package: ed
@@ -370,7 +370,7 @@ $ cme edit dpkg
  Akan tampil jendela baru seperti gambar dibawah ini
  
 <figure>
-	<a href="/images/cme-dpkg-001.png"><img src="/images/cme-dpkg-001.png" alt="Langkah 4" width="740px" /><></a>
+	<a href="/images/cme-dpkg-001.png"><img src="/images/cme-dpkg-001.png" alt="Langkah 4" width="740px" /></a>
 	<figcaption>cme GUI.</figcaption>
 </figure>
 
