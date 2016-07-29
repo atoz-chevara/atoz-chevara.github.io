@@ -280,7 +280,7 @@ Maintainer: Nama Anda <email@anda.com>
 Build-Depends: debhelper (>= 9), autotools-dev
 Standards-Version: 3.9.9
 Homepage: http://www.gnu.org/software/ed/
-Vcs-Cvs: cvs.savannah.gnu.org:/web/ed
+#Vcs-Git:
 Vcs-Browser: http://web.cvs.savannah.gnu.org/viewvc/?root=ed
 
 Package: ed
