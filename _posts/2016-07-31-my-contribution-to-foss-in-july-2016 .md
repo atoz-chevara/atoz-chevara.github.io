@@ -17,6 +17,7 @@ This is my note about contribution for FOSS in July:
 * Add [Glosarium](https://hosted.weblate.org/dictionaries/debian-handbook/id/) in weblade Debian Administrators Handbook for Indonesian Translator, improrted from po file.
 
 This part has been fully translated:
+
   + [99_backcover](https://hosted.weblate.org/projects/debian-handbook/99_backcover/id/)
   + [99_website](https://hosted.weblate.org/projects/debian-handbook/99_website/id/)
 
