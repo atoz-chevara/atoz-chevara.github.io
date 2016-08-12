@@ -2,7 +2,7 @@
 layout: post
 title: "Pemaketan Debian - Bagian 1"
 description: "Pedoman pemaketan dasar Debian."
-modified: 2016-07-29
+modified: 2016-08-12
 tags: [debian, blankon, pemaketan]
 image:
   background: triangular.png
@@ -25,8 +25,12 @@ comments: true
 {% highlight bash %}
 $ sudo apt-get install -y devscripts build-essential fakeroot debhelper \
 gnupg pbuilder dh-make dpkg-dev ubuntu-dev-tools \
-autotools-dev lintian haveged
+autotools-dev lintian rng-tools
 {% endhighlight %}
+
+<div class="alert alert-note"><strong>Catatan:</strong>
+<p>Aplikasi <em>rng-tools</em> di gunakan disini untuk mempercepat proses pembuatan kunci GPG.</p> 
+</div>
 
 #### Konfigurasi awal informasi tentang pemaket.
 
@@ -85,11 +89,38 @@ $ grep DEB* ~/.profile
  
 #### Membuat kunci GnuPG (GnuPrivacyGuard).
 
+ Sebelum membuat kunci GPG, kita jalankan daemon `rngd` secara manual:
+
+{% highlight bash %}
+$ sudo rngd -r /dev/urandom
+{% endhighlight %}
+
+ Lanjutkan dengan proses membuat kunci GPG:
+
 {% highlight bash %}
 $ gpg --gen-key
 {% endhighlight %}		
 
  Pilih: *(1) RSA and RSA (default) -> 4096 -> (0) -> y -> (O)kay*
+ 
+ Untuk melihat hasil dari pembuatan kunci GPG, bisa dilakukan dengan perintah berikut:
+ 
+{% highlight bash %}
+$ gpg --list-key --fingerprint
+{% endhighlight %}
+ 
+ Setelah proses pembuatan kunci GPG selesai, hentikan daemon `rngd` dengan perintah `pkill`:
+ 
+{% highlight bash %}
+$ sudo pkill rngd
+{% endhighlight %}
+
+ Pastikan daemon `rngd` tidak berjalan:
+
+{% highlight bash %}
+$ ps ax | grep rngd
+15459 pts/1    S+     0:00 grep rngd
+{% endhighlight %}
  
 #### Unduh paket sumber.
 
