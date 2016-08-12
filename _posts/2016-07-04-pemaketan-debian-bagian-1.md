@@ -98,6 +98,17 @@ $ sudo rngd -r /dev/urandom
  Kita juga perlu memperbaharui GnuPG untuk menggunakan **SHA 2** mengacu pada **SHA1**.
  Jadi tambahkan pada akhir file `~/.gnupg/gpg.conf`:
 
+<<<<<<< HEAD
+=======
+{% highlight bash %} 
+personal-digest-preferences SHA256
+cert-digest-algo SHA256
+default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed
+{% endhighlight %}
+
+ Berikut ini detailnya:
+ 
+>>>>>>> parent of 5d0fe56... Update 2016-07-04-pemaketan-debian-bagian-1.md
 {% highlight bash %}
 $ mkdir -p ~/.gnupg/
 $ cat >> ~/.gnupg/gpg.conf <<EOF
@@ -482,6 +493,7 @@ $ lintian -iIEv --pedantic ../*.changes
 + [Panduan Pembuatan Paket BlankOn.](http://dev.blankonlinux.or.id/wiki/Pemaket/PanduanPembuatanPaketMotu)
 + [Managing Debian packages with cme](https://github.com/dod38fr/config-model/wiki/Managing-Debian-packages-with-cme)
 + [Updating debian copyright file with cme](https://github.com/dod38fr/config-model/wiki/Updating-debian-copyright-file-with-cme)
++ [Creating a new GPG key](https://keyring.debian.org/creating-key.html)
 
 ---
 
