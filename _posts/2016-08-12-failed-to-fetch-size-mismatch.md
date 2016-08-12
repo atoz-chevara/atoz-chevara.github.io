@@ -45,8 +45,6 @@ $ sudo rm /var/cache/apt-cacher-ng/debrep/pool/main/t/tree/tree_1.7.0-3*
 {% endhighlight %}
 
 <div class="alert alert-note"><strong>Catatan:</strong>
-<ul>
 Dilain kesempatan saya akan menulis tentang <em>apt-cacher-ng</em> ini.
-</ul>
 </div>
 
