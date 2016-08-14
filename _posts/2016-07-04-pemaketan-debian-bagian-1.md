@@ -106,7 +106,6 @@ default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB
 
  Berikut ini detailnya:
  
->>>>>>> parent of 5d0fe56... Update 2016-07-04-pemaketan-debian-bagian-1.md
 {% highlight bash %}
 $ mkdir -p ~/.gnupg/
 $ cat >> ~/.gnupg/gpg.conf <<EOF
