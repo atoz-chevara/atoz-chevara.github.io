@@ -2,10 +2,8 @@
 layout: post
 title: "Pemaketan Debian - Bagian 1"
 description: "Pedoman pemaketan dasar Debian."
-modified: 2016-08-12
+modified: 2016-08-15
 tags: [debian, blankon, pemaketan]
-image:
-  background: triangular.png
 comments: true
 ---
 
@@ -142,6 +140,28 @@ $ ps ax | grep rngd
 15459 pts/1    S+     0:00 grep rngd
 {% endhighlight %}
  
+#### Membuat direktori kerja.
+
+ Sebelum kita memulai pada tahap selanjutnya, mari kita membuat direktori kerja kemudian masuk ke direktori
+ yang telah kita buat:
+
+{% highlight bash %}
+$ mkdir -p ~/Belajar/Pemaketan/{src,final}
+$ cd ~/Belajar/Pemaketan/src
+{% endhighlight %}
+
+ Hasil dari membuat direktori kerja akan seperti ini:
+ 
+{% highlight bash %}
+$ tree ~/Belajar
+/home/atoz/Belajar
+└── Pemaketan
+    ├── final
+    └── src
+
+3 directories, 0 files
+{% endhighlight %}
+
 #### Unduh paket sumber.
 
  Anda bisa memilih paket apa yang mau di buatkan versi Debiannya, disini saya 
