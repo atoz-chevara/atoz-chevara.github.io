@@ -152,7 +152,7 @@ $ sudo apt-get remove rng-tools
  yang telah kita buat:
 
 {% highlight bash %}
-$ mkdir -p ~/Belajar/Pemaketan/{src,final}
+$ mkdir -p ~/Belajar/Pemaketan/{src,final,github}
 $ cd ~/Belajar/Pemaketan/src
 {% endhighlight %}
 
@@ -163,15 +163,17 @@ $ tree ~/Belajar
 /home/user-anda/Belajar
 └── Pemaketan
     ├── final
+    ├── github
     └── src
 
-3 directories, 0 files
+4 directories, 0 files
 {% endhighlight %}
 
 <div class="alert alert-note"><strong>Keterangan:</strong>
 <ul>
 <li>Direktori <em>src</em> digunakan untuk membangun paket Debian.</li>
 <li>Direktori <em>final</em> digunakan untuk menyimpan paket yang akan kita buat.</li>
+<li>Direktori <em>github</em> digunakan untuk membuat repositori Git dari paket yang akan kita buat.</li>
 </ul>
 </div>
 
