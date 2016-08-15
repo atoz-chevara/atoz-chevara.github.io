@@ -162,6 +162,13 @@ $ tree ~/Belajar
 3 directories, 0 files
 {% endhighlight %}
 
+<div class="alert alert-note"><strong>Keterangan:</strong>
+<ol>
+<li>Direktori <em>src</em> digunakan untuk membangun paket Debian.</li>
+<li>Direktori <em>final</em> digunakan untuk menyimpan paket yang akan kita buat.</li>
+</ol>
+</div>
+
 #### Unduh paket sumber.
 
  Anda bisa memilih paket apa yang mau di buatkan versi Debiannya, disini saya 
