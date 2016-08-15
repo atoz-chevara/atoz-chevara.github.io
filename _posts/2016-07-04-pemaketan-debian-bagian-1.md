@@ -150,7 +150,7 @@ $ mkdir -p ~/Belajar/Pemaketan/{src,final}
 $ cd ~/Belajar/Pemaketan/src
 {% endhighlight %}
 
- Hasil dari membuat direktori kerja akan seperti ini:
+ Hasil dari membuat direktori kerja akan tampak seperti ini:
  
 {% highlight bash %}
 $ tree ~/Belajar
