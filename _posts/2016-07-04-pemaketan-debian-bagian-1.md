@@ -139,6 +139,12 @@ $ sudo pkill rngd
 $ ps ax | grep rngd
 15459 pts/1    S+     0:00 grep rngd
 {% endhighlight %}
+
+ Hapus paket `rng-tools` bila tidak ingin membuat kunci gpg di kemudian hari.
+ 
+{% highlight bash %}
+$ sudo apt-get remove rng-tools
+{% endhighlight %}
  
 #### Membuat direktori kerja.
 
@@ -163,10 +169,10 @@ $ tree ~/Belajar
 {% endhighlight %}
 
 <div class="alert alert-note"><strong>Keterangan:</strong>
-<ol>
+<ul>
 <li>Direktori <em>src</em> digunakan untuk membangun paket Debian.</li>
 <li>Direktori <em>final</em> digunakan untuk menyimpan paket yang akan kita buat.</li>
-</ol>
+</ul>
 </div>
 
 #### Unduh paket sumber.
