@@ -160,7 +160,7 @@ $ cd ~/Belajar/Pemaketan/src
  
 {% highlight bash %}
 $ tree ~/Belajar
-/home/atoz/Belajar
+/home/user-anda/Belajar
 └── Pemaketan
     ├── final
     └── src
