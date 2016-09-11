@@ -16,7 +16,7 @@ comments: true
 
 ### Apa Itu Docker ?
 
-Docker adalah sebuah project open source yang ditujukan untuk developer atau sysadmin untuk membangun, 
+[Docker][] adalah sebuah project open source yang ditujukan untuk developer atau sysadmin untuk membangun, 
 mengemas dan menjalankan aplikasi dimana pun di dalam sebuah container.
 
 ### Pengaturan GPU Raspberry Pi
@@ -163,3 +163,5 @@ docker-machine version 0.8.0, build b85aac1
 {% endhighlight %}
 
  Selesai, pada artikel selanjutnya kita akan lanjutkan dengan membuat `image` dan push ke [Docker Hub](https://hub.docker.com), silahkan mendaftar terlebih dahulu.
+
+[Docker]: https://www.docker.com/what-docker
