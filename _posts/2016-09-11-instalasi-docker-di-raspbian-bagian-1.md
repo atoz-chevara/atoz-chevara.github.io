@@ -147,7 +147,7 @@ The repository is setup! You can now install packages.
  Selanjutnya pasang paket `docker-compose` dan `docker-machine`:
  
 {% highlight bash %}
-$ sudo apt-get install git docker-compose docker-machine
+$ sudo apt-get install -y git docker-compose docker-machine
 {% endhighlight %}
 
  Periksa paket yang sudah dipasang:
