@@ -121,3 +121,40 @@ Insecure Registries:
 
  Selamat, docker sudah berjalan di mesin raspi Anda.
  
+### Memasang `docker-compose` dan `docker-machine`
+
+ Untuk memasang `docker-compose` dan `docker-machine` kita memerlukan repositori Hypriot, jalankan perintah berikut:
+
+{% highlight bash %}
+$ curl -s https://packagecloud.io/install/repositories/Hypriot/Schatzkiste/script.deb.sh | sudo bash
+Detected operating system as raspbian/jessie.
+Checking for curl...
+Detected curl...
+Running apt-get update... done.
+Installing apt-transport-https... done.
+Installing /etc/apt/sources.list.d/Hypriot_Schatzkiste.list...done.
+Importing packagecloud gpg key... done.
+Running apt-get update... done.
+
+The repository is setup! You can now install packages.
+{% endhighlight %}
+
+ Selanjutnya pasang paket `docker-compose` dan `docker-machine`:
+ 
+{% highlight bash %}
+$ sudo apt-get install git docker-compose docker-machine
+{% endhighlight %}
+
+ Periksa paket yang sudah dipasang:
+ 
+{% highlight bash %}
+$ docker-compose -v
+docker-compose version 1.8.0, build 94f7016
+{% endhighlight %}
+
+{% highlight bash %}
+$ docker-machine -v
+docker-machine version 0.8.0, build b85aac1
+{% endhighlight %}
+
+ Selesai, pada artikel selanjutnya kita akan lanjutkan dengan membuat `image` dan push ke [Docker Hub](https://hub.docker.com), silahkan mendaftar terlebih dahulu.
