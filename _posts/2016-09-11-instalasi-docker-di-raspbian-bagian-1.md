@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Instalasi Docker di Raspbian - Part 1"
-description: "Pemasangan Docker di Raspbian Jessie - Part 1"
+title: "Instalasi Docker di Raspbian - Bagian 1"
+description: "Pemasangan Docker di Raspbian Jessie - Bagian 1"
+modified: 2016-09-11
 tags: [rasberry pi 3, raspberry pi, raspbian, jessie, docker]
 comments: true
 ---
@@ -57,10 +58,10 @@ $ sudo systemctl start docker
 $ sudo usermod -aG docker useranda
 {% endhighlight %}
  
- Jalankan perintah berikut:
+ Untuk memastikan docker telah berjalan, jalankan perintah berikut:
  
 {% highlight bash %}
-$ sudo docker version
+$ docker version
 Client:
  Version:      1.12.1
  API version:  1.24
@@ -79,7 +80,7 @@ Server:
 {% endhighlight %}
 
 {% highlight bash %}
-$ sudo docker info
+$ docker info
 Containers: 0
  Running: 0
  Paused: 0
